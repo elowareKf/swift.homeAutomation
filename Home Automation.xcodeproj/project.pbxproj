@@ -13,6 +13,7 @@
 		24EF855F256EEC63005F7EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF855E256EEC63005F7EEF /* Preview Assets.xcassets */; };
 		24EF856A256EEC63005F7EEF /* Home_AutomationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8569256EEC63005F7EEF /* Home_AutomationTests.swift */; };
 		24EF8575256EEC63005F7EEF /* Home_AutomationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8574256EEC63005F7EEF /* Home_AutomationUITests.swift */; };
+		24EF8586256EEF7C005F7EEF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8585256EEF7C005F7EEF /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		24EF8570256EEC63005F7EEF /* Home AutomationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home AutomationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EF8574256EEC63005F7EEF /* Home_AutomationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_AutomationUITests.swift; sourceTree = "<group>"; };
 		24EF8576256EEC63005F7EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF8585256EEF7C005F7EEF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				24EF855B256EEC63005F7EEF /* Assets.xcassets */,
 				24EF8560256EEC63005F7EEF /* Info.plist */,
 				24EF855D256EEC63005F7EEF /* Preview Content */,
+				24EF8585256EEF7C005F7EEF /* Service.swift */,
 			);
 			path = "Home Automation";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				24EF855A256EEC60005F7EEF /* ContentView.swift in Sources */,
 				24EF8558256EEC60005F7EEF /* Home_AutomationApp.swift in Sources */,
+				24EF8586256EEF7C005F7EEF /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
