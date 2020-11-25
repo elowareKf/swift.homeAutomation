@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24EF8558256EEC60005F7EEF /* Home_AutomationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8557256EEC60005F7EEF /* Home_AutomationApp.swift */; };
+		24EF855A256EEC60005F7EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8559256EEC60005F7EEF /* ContentView.swift */; };
+		24EF855C256EEC63005F7EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF855B256EEC63005F7EEF /* Assets.xcassets */; };
+		24EF855F256EEC63005F7EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF855E256EEC63005F7EEF /* Preview Assets.xcassets */; };
+		24EF856A256EEC63005F7EEF /* Home_AutomationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8569256EEC63005F7EEF /* Home_AutomationTests.swift */; };
+		24EF8575256EEC63005F7EEF /* Home_AutomationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8574256EEC63005F7EEF /* Home_AutomationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24EF8566256EEC63005F7EEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EF854C256EEC60005F7EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24EF8553256EEC60005F7EEF;
+			remoteInfo = "Home Automation";
+		};
+		24EF8571256EEC63005F7EEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EF854C256EEC60005F7EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24EF8553256EEC60005F7EEF;
+			remoteInfo = "Home Automation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24EF8554256EEC60005F7EEF /* Home Automation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Automation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF8557256EEC60005F7EEF /* Home_AutomationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_AutomationApp.swift; sourceTree = "<group>"; };
+		24EF8559256EEC60005F7EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24EF855B256EEC63005F7EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24EF855E256EEC63005F7EEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		24EF8560256EEC63005F7EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF8565256EEC63005F7EEF /* Home AutomationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home AutomationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF8569256EEC63005F7EEF /* Home_AutomationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_AutomationTests.swift; sourceTree = "<group>"; };
+		24EF856B256EEC63005F7EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF8570256EEC63005F7EEF /* Home AutomationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home AutomationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF8574256EEC63005F7EEF /* Home_AutomationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_AutomationUITests.swift; sourceTree = "<group>"; };
+		24EF8576256EEC63005F7EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24EF8551256EEC60005F7EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF8562256EEC63005F7EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF856D256EEC63005F7EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24EF854B256EEC60005F7EEF = {
+			isa = PBXGroup;
+			children = (
+				24EF8556256EEC60005F7EEF /* Home Automation */,
+				24EF8568256EEC63005F7EEF /* Home AutomationTests */,
+				24EF8573256EEC63005F7EEF /* Home AutomationUITests */,
+				24EF8555256EEC60005F7EEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24EF8555256EEC60005F7EEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24EF8554256EEC60005F7EEF /* Home Automation.app */,
+				24EF8565256EEC63005F7EEF /* Home AutomationTests.xctest */,
+				24EF8570256EEC63005F7EEF /* Home AutomationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24EF8556256EEC60005F7EEF /* Home Automation */ = {
+			isa = PBXGroup;
+			children = (
+				24EF8557256EEC60005F7EEF /* Home_AutomationApp.swift */,
+				24EF8559256EEC60005F7EEF /* ContentView.swift */,
+				24EF855B256EEC63005F7EEF /* Assets.xcassets */,
+				24EF8560256EEC63005F7EEF /* Info.plist */,
+				24EF855D256EEC63005F7EEF /* Preview Content */,
+			);
+			path = "Home Automation";
+			sourceTree = "<group>";
+		};
+		24EF855D256EEC63005F7EEF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				24EF855E256EEC63005F7EEF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24EF8568256EEC63005F7EEF /* Home AutomationTests */ = {
+			isa = PBXGroup;
+			children = (
+				24EF8569256EEC63005F7EEF /* Home_AutomationTests.swift */,
+				24EF856B256EEC63005F7EEF /* Info.plist */,
+			);
+			path = "Home AutomationTests";
+			sourceTree = "<group>";
+		};
+		24EF8573256EEC63005F7EEF /* Home AutomationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24EF8574256EEC63005F7EEF /* Home_AutomationUITests.swift */,
+				24EF8576256EEC63005F7EEF /* Info.plist */,
+			);
+			path = "Home AutomationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24EF8553256EEC60005F7EEF /* Home Automation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF8579256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home Automation" */;
+			buildPhases = (
+				24EF8550256EEC60005F7EEF /* Sources */,
+				24EF8551256EEC60005F7EEF /* Frameworks */,
+				24EF8552256EEC60005F7EEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Home Automation";
+			productName = "Home Automation";
+			productReference = 24EF8554256EEC60005F7EEF /* Home Automation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24EF8564256EEC63005F7EEF /* Home AutomationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF857C256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home AutomationTests" */;
+			buildPhases = (
+				24EF8561256EEC63005F7EEF /* Sources */,
+				24EF8562256EEC63005F7EEF /* Frameworks */,
+				24EF8563256EEC63005F7EEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24EF8567256EEC63005F7EEF /* PBXTargetDependency */,
+			);
+			name = "Home AutomationTests";
+			productName = "Home AutomationTests";
+			productReference = 24EF8565256EEC63005F7EEF /* Home AutomationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24EF856F256EEC63005F7EEF /* Home AutomationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF857F256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home AutomationUITests" */;
+			buildPhases = (
+				24EF856C256EEC63005F7EEF /* Sources */,
+				24EF856D256EEC63005F7EEF /* Frameworks */,
+				24EF856E256EEC63005F7EEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24EF8572256EEC63005F7EEF /* PBXTargetDependency */,
+			);
+			name = "Home AutomationUITests";
+			productName = "Home AutomationUITests";
+			productReference = 24EF8570256EEC63005F7EEF /* Home AutomationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24EF854C256EEC60005F7EEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					24EF8553256EEC60005F7EEF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					24EF8564256EEC63005F7EEF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 24EF8553256EEC60005F7EEF;
+					};
+					24EF856F256EEC63005F7EEF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 24EF8553256EEC60005F7EEF;
+					};
+				};
+			};
+			buildConfigurationList = 24EF854F256EEC60005F7EEF /* Build configuration list for PBXProject "Home Automation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24EF854B256EEC60005F7EEF;
+			productRefGroup = 24EF8555256EEC60005F7EEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24EF8553256EEC60005F7EEF /* Home Automation */,
+				24EF8564256EEC63005F7EEF /* Home AutomationTests */,
+				24EF856F256EEC63005F7EEF /* Home AutomationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24EF8552256EEC60005F7EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF855F256EEC63005F7EEF /* Preview Assets.xcassets in Resources */,
+				24EF855C256EEC63005F7EEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF8563256EEC63005F7EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF856E256EEC63005F7EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24EF8550256EEC60005F7EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF855A256EEC60005F7EEF /* ContentView.swift in Sources */,
+				24EF8558256EEC60005F7EEF /* Home_AutomationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF8561256EEC63005F7EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF856A256EEC63005F7EEF /* Home_AutomationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF856C256EEC63005F7EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF8575256EEC63005F7EEF /* Home_AutomationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24EF8567256EEC63005F7EEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24EF8553256EEC60005F7EEF /* Home Automation */;
+			targetProxy = 24EF8566256EEC63005F7EEF /* PBXContainerItemProxy */;
+		};
+		24EF8572256EEC63005F7EEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24EF8553256EEC60005F7EEF /* Home Automation */;
+			targetProxy = 24EF8571256EEC63005F7EEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24EF8577256EEC63005F7EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24EF8578256EEC63005F7EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24EF857A256EEC63005F7EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Home Automation/Preview Content\"";
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Home Automation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-Automation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24EF857B256EEC63005F7EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Home Automation/Preview Content\"";
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Home Automation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-Automation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24EF857D256EEC63005F7EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				INFOPLIST_FILE = "Home AutomationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-AutomationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Automation.app/Home Automation";
+			};
+			name = Debug;
+		};
+		24EF857E256EEC63005F7EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				INFOPLIST_FILE = "Home AutomationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-AutomationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Automation.app/Home Automation";
+			};
+			name = Release;
+		};
+		24EF8580256EEC63005F7EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				INFOPLIST_FILE = "Home AutomationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-AutomationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Home Automation";
+			};
+			name = Debug;
+		};
+		24EF8581256EEC63005F7EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				INFOPLIST_FILE = "Home AutomationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-AutomationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Home Automation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24EF854F256EEC60005F7EEF /* Build configuration list for PBXProject "Home Automation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF8577256EEC63005F7EEF /* Debug */,
+				24EF8578256EEC63005F7EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF8579256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home Automation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF857A256EEC63005F7EEF /* Debug */,
+				24EF857B256EEC63005F7EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF857C256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home AutomationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF857D256EEC63005F7EEF /* Debug */,
+				24EF857E256EEC63005F7EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF857F256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home AutomationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF8580256EEC63005F7EEF /* Debug */,
+				24EF8581256EEC63005F7EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24EF854C256EEC60005F7EEF /* Project object */;
+}
