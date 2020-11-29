@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		248C464E257436CE0016B2FD /* ControlItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C464D257436CE0016B2FD /* ControlItem.swift */; };
 		24EF8558256EEC60005F7EEF /* Home_AutomationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8557256EEC60005F7EEF /* Home_AutomationApp.swift */; };
 		24EF855A256EEC60005F7EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8559256EEC60005F7EEF /* ContentView.swift */; };
 		24EF855C256EEC63005F7EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF855B256EEC63005F7EEF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		248C464D257436CE0016B2FD /* ControlItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlItem.swift; sourceTree = "<group>"; };
 		24EF8554256EEC60005F7EEF /* Home Automation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Automation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EF8557256EEC60005F7EEF /* Home_AutomationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_AutomationApp.swift; sourceTree = "<group>"; };
 		24EF8559256EEC60005F7EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		248C464B2574362A0016B2FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24EF8559256EEC60005F7EEF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		248C464C257436A60016B2FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				248C464D257436CE0016B2FD /* ControlItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		24EF854B256EEC60005F7EEF = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +115,10 @@
 		24EF8556256EEC60005F7EEF /* Home Automation */ = {
 			isa = PBXGroup;
 			children = (
+				248C464C257436A60016B2FD /* Models */,
+				248C464B2574362A0016B2FD /* Views */,
 				24EF858A25718BFD005F7EEF /* Services */,
 				24EF8557256EEC60005F7EEF /* Home_AutomationApp.swift */,
-				24EF8559256EEC60005F7EEF /* ContentView.swift */,
 				24EF855B256EEC63005F7EEF /* Assets.xcassets */,
 				24EF8560256EEC63005F7EEF /* Info.plist */,
 				24EF855D256EEC63005F7EEF /* Preview Content */,
@@ -270,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248C464E257436CE0016B2FD /* ControlItem.swift in Sources */,
 				24EF855A256EEC60005F7EEF /* ContentView.swift in Sources */,
 				24EF8558256EEC60005F7EEF /* Home_AutomationApp.swift in Sources */,
 				24EF8586256EEF7C005F7EEF /* RestService.swift in Sources */,

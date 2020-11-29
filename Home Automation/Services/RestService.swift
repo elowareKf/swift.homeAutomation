@@ -14,11 +14,6 @@ protocol CanLoadIos {
     func LoadedIos(items: ItemResult)
 }
 
-struct Item: Codable {
-    let id: Int
-    let name: String
-    let value: Int
-}
 
 struct ItemResult: Codable {
     let names: [String]
