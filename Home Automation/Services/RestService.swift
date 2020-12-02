@@ -14,15 +14,9 @@ protocol CanLoadIos {
     func LoadedIos(items: ItemResult)
 }
 
-struct Item: Codable {
-    let id: Int
-    let name: String
+struct PatchObject: Codable{
+    let io: Int
     let value: Int
-}
-
-struct ItemResult: Codable {
-    let names: [String]
-    let values: [Int]
 }
 
 
@@ -81,7 +75,25 @@ class RestService: RestServiceBase {
         }).resume()
     }
 
-    func setItem(id: String, value: Int) {
+    
+    
+    func setItem(id: Int, value: Int,  callback: @escaping (Int)->Void) {
+        // jsonEncode({"io": io, "value": value})
+        var request = URLRequest(url: super.url)
+        request.httpMethod = "PATCH"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        if let data = try? JSONEncoder().encode(PatchObject(io: id, value: value)){
+            request.httpBody = data
+            print(String(data: data, encoding: .utf8)!)
+            URLSession(configuration: .default).dataTask(with: request){ data, response, error in
+                if let opResponse = response as? HTTPURLResponse{
+                    if opResponse.statusCode == 200{
+                    callback(value)
+                }
+            }
+            }.resume()
+        }
+        
     }
 
     func getItem(id: String) -> Int {

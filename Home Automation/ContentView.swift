@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
 
     var restService: RestService
+    @State var items = [Item]()
 
     init() {
         restService = RestService()
+        ItemView.restService = restService
     }
 
     var body: some View {
@@ -25,30 +27,33 @@ struct ContentView: View {
                     for name in items.names {
                         print(name)
                     }
+                    self.items = items.toItems()
                 })
             }
-            LazyHGrid(rows: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Rows@*/[GridItem(.fixed(20))]/*@END_MENU_TOKEN@*/) {
-                ItemView(title: "Haustüre", id: "0")
-                ItemView(title: "Haustüre", id: "0")
-                ItemView(title: "Haustüre", id: "0")
-
-            }
+            LazyVGrid(columns: [GridItem(),GridItem(),GridItem()], content: {
+                ForEach(items){ item in
+                    ItemView(title: item.name, id: String(item.id), value: item.value != 0)
+                }
+            })
         }
     }
 }
 
 
 struct ItemView: View {
-
+    
     let title: String
     let id: String
+    @State var value: Bool
+    static var restService: RestService!
 
     var body: some View {
-        Button("Name", action: { () -> Void in
-            print("Starting \(id)")
-
+        Button(title, action: { () -> Void in
+            if let idInt: Int = Int(self.id){
+                ItemView.restService.setItem(id: idInt, value: value ? 0 : 1){result in value = result != 0}
+            }
         })
-                .border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+        .border(Color.black, width: 1.0)
     }
 
 
