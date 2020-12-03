@@ -16,8 +16,8 @@ struct Item: Codable, Identifiable {
 struct ItemResult: Codable {
     let names: [String]
     let values: [Int]
-    
-    func toItems() -> [Item]{
+
+    func toItems() -> [Item] {
         var result = [Item]()
         for i in 0..<names.count {
             result.append(Item(id: i, name: names[i], value: values[i]))

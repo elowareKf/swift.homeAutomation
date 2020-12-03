@@ -14,7 +14,7 @@ protocol CanLoadIos {
     func LoadedIos(items: ItemResult)
 }
 
-struct PatchObject: Codable{
+struct PatchObject: Codable {
     let io: Int
     let value: Int
 }
@@ -62,38 +62,37 @@ class RestService: RestServiceBase {
 
     func getItems(callback: @escaping (ItemResult) -> Void) {
         print(super.url)
-        URLSession(configuration: .default).dataTask(with: super.url, completionHandler: {(data: Data?, response: URLResponse?, error: Error?) in
+        URLSession(configuration: .default).dataTask(with: super.url, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
             if (data != nil) {
                 if let result = try? JSONDecoder().decode(ItemResult.self, from: data!) {
                     callback(result)
                 }
             }
-            
-            if (error != nil){
+
+            if (error != nil) {
                 print(error!)
             }
         }).resume()
     }
 
-    
-    
-    func setItem(id: Int, value: Int,  callback: @escaping (Int)->Void) {
+
+    func setItem(id: Int, value: Int, callback: @escaping (Int) -> Void) {
         // jsonEncode({"io": io, "value": value})
         var request = URLRequest(url: super.url)
         request.httpMethod = "PATCH"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        if let data = try? JSONEncoder().encode(PatchObject(io: id, value: value)){
+        if let data = try? JSONEncoder().encode(PatchObject(io: id, value: value)) {
             request.httpBody = data
             print(String(data: data, encoding: .utf8)!)
-            URLSession(configuration: .default).dataTask(with: request){ data, response, error in
-                if let opResponse = response as? HTTPURLResponse{
-                    if opResponse.statusCode == 200{
-                    callback(value)
+            URLSession(configuration: .default).dataTask(with: request) { data, response, error in
+                if let opResponse = response as? HTTPURLResponse {
+                    if opResponse.statusCode == 200 {
+                        callback(value)
+                    }
                 }
-            }
             }.resume()
         }
-        
+
     }
 
     func getItem(id: String) -> Int {

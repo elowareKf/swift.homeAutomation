@@ -15,53 +15,53 @@ struct ContentView: View {
     init() {
         restService = RestService()
         ItemView.restService = restService
+        loadItems()
     }
+    
+    func loadItems(){
+        restService.getItems(callback: { (items: ItemResult) in
+            self.items = items.toItems()
+        })
 
+    }
+    
+    @ViewBuilder
     var body: some View {
-
-        VStack {
-            Button("Laden") {
-                print("Lade daten...")
-                RestService().getItems(callback: { (items: ItemResult) in
-                    print("Data received")
-                    for name in items.names {
-                        print(name)
-                    }
-                    self.items = items.toItems()
-                })
+        if (items.count == 0){
+            VStack{
+            ProgressView {
+                
             }
-            LazyVGrid(columns: [GridItem(),GridItem(),GridItem()], content: {
-                ForEach(items){ item in
+                Text("Lade Daten...")
+            }
+        }else{
+            LazyVGrid(columns: [GridItem(), GridItem(), GridItem()], content: {
+                ForEach(items) { item in
                     ItemView(title: item.name, id: String(item.id), value: item.value != 0)
                 }
             })
         }
+        
     }
 }
-
-
-struct ItemView: View {
-    
-    let title: String
-    let id: String
-    @State var value: Bool
-    static var restService: RestService!
-
-    var body: some View {
-        Button(title, action: { () -> Void in
-            if let idInt: Int = Int(self.id){
-                ItemView.restService.setItem(id: idInt, value: value ? 0 : 1){result in value = result != 0}
-            }
-        })
-        .border(Color.black, width: 1.0)
-    }
-
-
-}
-
 
 struct ContentView_Previews: PreviewProvider {
+    
+    static func generateDemoData() -> [Item]{
+        var items = [Item]()
+        items.append(Item(id: 1, name: "Nummer 1", value: 0))
+        items.append(Item(id: 2, name: "Nummer 2", value: 1))
+        items.append(Item(id: 3, name: "Nummer 3", value: 0))
+        items.append(Item(id: 4, name: "Nummer 4", value: 1))
+        items.append(Item(id: 5, name: "Nummer 5", value: 0))
+        items.append(Item(id: 6, name: "Nummer 6", value: 1))
+        items.append(Item(id: 7, name: "Nummer 7", value: 0))
+        items.append(Item(id: 8, name: "Nummer 8", value: 1))
+        items.append(Item(id: 9, name: "Nummer 9", value: 0))
+        return items
+    }
+    
     static var previews: some View {
-        ContentView()
+        return ContentView()
     }
 }
