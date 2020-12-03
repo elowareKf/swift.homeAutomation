@@ -8,66 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     var restService: RestService
-
-    init() {
+    @State var items = [Item]()
+    
+    init(items: [Item]) {
         restService = RestService()
+        ItemView.restService = restService
+        
+        self.items = items
     }
-
-    func getButtons(items from: ItemResult) -> [ItemView] {
-        print("Data received")
-        var controlItems = [ControlItem]()
-
-        for index in 0..<from.names.count {
-            let controlItem = ControlItem()
-            controlItem.name = from.names[index]
-            controlItem.id = index
-            controlItems.append(controlItem)
-        }
-
-        for item in controlItems {
-            print("\(item.id): \(item.name)")
-        }
-        return controlItems.map({ (item: ControlItem) in ItemView(controlItem: item) });
-    }
-
-
+    
     var body: some View {
-
-        VStack {
-            Button("Laden") {
-                print("Lade daten...")
-                RestService().getItems(callback: { (items: ItemResult) in getButtons(items: items) })
+        ScrollView{
+            VStack{
+                Text("Geladen")
+            LazyVGrid(columns: [GridItem(), GridItem(), GridItem()], content: {
+                ForEach(self.items) { item in
+                    ItemView(title: item.name, id: String(item.id), value: item.value != 0)
+                }
+            })
             }
         }
     }
+}
 
-
-    struct ItemView: View {
-
-        let title: String
-        let id: Int
-        var value: Bool = false
-
-        init(controlItem: ControlItem) {
-            self.title = controlItem.name
-            self.id = controlItem.id
-        }
-
-        var body: some View {
-            Button("Name", action: { () -> Void in
-                print("Starting \(id)")
-
-            })
-                    .border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-        }
+struct ContentView_Previews: PreviewProvider {
+    
+    static func generateDemoData() -> [Item]{
+        var items = [Item]()
+        items.append(Item(id: 1, name: "Nummer 1", value: 0))
+        items.append(Item(id: 2, name: "Nummer 2", value: 1))
+        items.append(Item(id: 3, name: "Nummer 3", value: 0))
+        items.append(Item(id: 4, name: "Nummer 4", value: 1))
+        items.append(Item(id: 5, name: "Nummer 5", value: 0))
+        items.append(Item(id: 6, name: "Nummer 6", value: 1))
+        items.append(Item(id: 7, name: "Nummer 7", value: 0))
+        items.append(Item(id: 8, name: "Nummer 8", value: 1))
+        items.append(Item(id: 9, name: "Nummer 9", value: 0))
+        return items
     }
-
-
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+    
+    static var previews: some View {
+        return ContentView(items: generateDemoData())
     }
 }

@@ -17,18 +17,17 @@ struct ItemView: View {
     var body: some View {
 
         ZStack {
-
-            RoundedRectangle(cornerRadius: 20.0)
+            RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .foregroundColor(value ? .green : .red)
-                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                .onTapGesture {
+                    if let idInt: Int = Int(self.id) {
+                        ItemView.restService.setItem(id: idInt, value: value ? 0 : 1) { result in
+                            value = result != 0
+                        }
+                    }}
                 
-            Button(title, action: { () -> Void in
-                if let idInt: Int = Int(self.id) {
-                    ItemView.restService.setItem(id: idInt, value: value ? 0 : 1) { result in
-                        value = result != 0
-                    }
-                }
-            }).foregroundColor(.white)
+                    Text(title).foregroundColor(.white)
 
         }
         
