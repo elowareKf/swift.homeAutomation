@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247FF1A5257A0FE300112374 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247FF1A3257A0FE300112374 /* Interface.storyboard */; };
+		247FF1A7257A0FE500112374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247FF1A6257A0FE500112374 /* Assets.xcassets */; };
+		247FF1AE257A0FE500112374 /* HomeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 247FF1AD257A0FE500112374 /* HomeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		247FF1B3257A0FE500112374 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FF1B2257A0FE500112374 /* HostingController.swift */; };
+		247FF1B5257A0FE500112374 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FF1B4257A0FE500112374 /* ContentView.swift */; };
+		247FF1B7257A0FE500112374 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FF1B6257A0FE500112374 /* ExtensionDelegate.swift */; };
+		247FF1B9257A0FE500112374 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FF1B8257A0FE500112374 /* NotificationController.swift */; };
+		247FF1BB257A0FE500112374 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FF1BA257A0FE500112374 /* NotificationView.swift */; };
+		247FF1BD257A0FE500112374 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FF1BC257A0FE500112374 /* ComplicationController.swift */; };
+		247FF1BF257A0FE600112374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247FF1BE257A0FE600112374 /* Assets.xcassets */; };
+		247FF1C2257A0FE600112374 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247FF1C1257A0FE600112374 /* Preview Assets.xcassets */; };
+		247FF1C7257A0FE600112374 /* HomeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 247FF1A1257A0FE300112374 /* HomeWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		247FF1D5257A127000112374 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCC2D7257934EE001A0415 /* ItemView.swift */; };
+		247FF1DB257A12E200112374 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8585256EEF7C005F7EEF /* RestService.swift */; };
+		247FF1E1257A12F600112374 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B47DE725782AD900F706E0 /* Item.swift */; };
 		24B47DE825782AD900F706E0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B47DE725782AD900F706E0 /* Item.swift */; };
 		24B47DF6257958D400F706E0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24B47DF5257958D400F706E0 /* .gitignore */; };
 		24B47DFB2579594800F706E0 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 24B47DFA2579594800F706E0 /* readme.md */; };
@@ -22,6 +37,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		247FF1AF257A0FE500112374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EF854C256EEC60005F7EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 247FF1AC257A0FE500112374;
+			remoteInfo = "HomeWatch Extension";
+		};
+		247FF1C5257A0FE600112374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EF854C256EEC60005F7EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 247FF1A0257A0FE300112374;
+			remoteInfo = HomeWatch;
+		};
 		24EF8566256EEC63005F7EEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24EF854C256EEC60005F7EEF /* Project object */;
@@ -38,7 +67,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		247FF1C8257A0FE600112374 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				247FF1C7257A0FE600112374 /* HomeWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247FF1CB257A0FE600112374 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				247FF1AE257A0FE500112374 /* HomeWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		247FF1A1257A0FE300112374 /* HomeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		247FF1A4257A0FE300112374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		247FF1A6257A0FE500112374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		247FF1A8257A0FE500112374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247FF1AD257A0FE500112374 /* HomeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HomeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		247FF1B2257A0FE500112374 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		247FF1B4257A0FE500112374 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		247FF1B6257A0FE500112374 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		247FF1B8257A0FE500112374 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		247FF1BA257A0FE500112374 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		247FF1BC257A0FE500112374 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		247FF1BE257A0FE600112374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		247FF1C1257A0FE600112374 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		247FF1C3257A0FE600112374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247FF1C4257A0FE600112374 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		24B47DE725782AD900F706E0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		24B47DF5257958D400F706E0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		24B47DFA2579594800F706E0 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
@@ -60,6 +129,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		247FF1AA257A0FE500112374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24EF8551256EEC60005F7EEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +160,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		247FF1A2257A0FE300112374 /* HomeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				247FF1A3257A0FE300112374 /* Interface.storyboard */,
+				247FF1A6257A0FE500112374 /* Assets.xcassets */,
+				247FF1A8257A0FE500112374 /* Info.plist */,
+			);
+			path = HomeWatch;
+			sourceTree = "<group>";
+		};
+		247FF1B1257A0FE500112374 /* HomeWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				247FF1B2257A0FE500112374 /* HostingController.swift */,
+				247FF1B4257A0FE500112374 /* ContentView.swift */,
+				247FF1B6257A0FE500112374 /* ExtensionDelegate.swift */,
+				247FF1B8257A0FE500112374 /* NotificationController.swift */,
+				247FF1BA257A0FE500112374 /* NotificationView.swift */,
+				247FF1BC257A0FE500112374 /* ComplicationController.swift */,
+				247FF1BE257A0FE600112374 /* Assets.xcassets */,
+				247FF1C3257A0FE600112374 /* Info.plist */,
+				247FF1C4257A0FE600112374 /* PushNotificationPayload.apns */,
+				247FF1C0257A0FE600112374 /* Preview Content */,
+			);
+			path = "HomeWatch Extension";
+			sourceTree = "<group>";
+		};
+		247FF1C0257A0FE600112374 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				247FF1C1257A0FE600112374 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		24B47DE625782AC800F706E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +221,8 @@
 				24EF8556256EEC60005F7EEF /* Home Automation */,
 				24EF8568256EEC63005F7EEF /* Home AutomationTests */,
 				24EF8573256EEC63005F7EEF /* Home AutomationUITests */,
+				247FF1A2257A0FE300112374 /* HomeWatch */,
+				247FF1B1257A0FE500112374 /* HomeWatch Extension */,
 				24EF8555256EEC60005F7EEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +233,8 @@
 				24EF8554256EEC60005F7EEF /* Home Automation.app */,
 				24EF8565256EEC63005F7EEF /* Home AutomationTests.xctest */,
 				24EF8570256EEC63005F7EEF /* Home AutomationUITests.xctest */,
+				247FF1A1257A0FE300112374 /* HomeWatch.app */,
+				247FF1AD257A0FE500112374 /* HomeWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +290,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		247FF1A0257A0FE300112374 /* HomeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247FF1CF257A0FE600112374 /* Build configuration list for PBXNativeTarget "HomeWatch" */;
+			buildPhases = (
+				247FF19F257A0FE300112374 /* Resources */,
+				247FF1CB257A0FE600112374 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				247FF1B0257A0FE500112374 /* PBXTargetDependency */,
+			);
+			name = HomeWatch;
+			productName = HomeWatch;
+			productReference = 247FF1A1257A0FE300112374 /* HomeWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		247FF1AC257A0FE500112374 /* HomeWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247FF1CE257A0FE600112374 /* Build configuration list for PBXNativeTarget "HomeWatch Extension" */;
+			buildPhases = (
+				247FF1A9257A0FE500112374 /* Sources */,
+				247FF1AA257A0FE500112374 /* Frameworks */,
+				247FF1AB257A0FE500112374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HomeWatch Extension";
+			productName = "HomeWatch Extension";
+			productReference = 247FF1AD257A0FE500112374 /* HomeWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		24EF8553256EEC60005F7EEF /* Home Automation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24EF8579256EEC63005F7EEF /* Build configuration list for PBXNativeTarget "Home Automation" */;
@@ -182,10 +331,12 @@
 				24EF8550256EEC60005F7EEF /* Sources */,
 				24EF8551256EEC60005F7EEF /* Frameworks */,
 				24EF8552256EEC60005F7EEF /* Resources */,
+				247FF1C8257A0FE600112374 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				247FF1C6257A0FE600112374 /* PBXTargetDependency */,
 			);
 			name = "Home Automation";
 			productName = "Home Automation";
@@ -237,6 +388,12 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					247FF1A0257A0FE300112374 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					247FF1AC257A0FE500112374 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					24EF8553256EEC60005F7EEF = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -266,11 +423,31 @@
 				24EF8553256EEC60005F7EEF /* Home Automation */,
 				24EF8564256EEC63005F7EEF /* Home AutomationTests */,
 				24EF856F256EEC63005F7EEF /* Home AutomationUITests */,
+				247FF1A0257A0FE300112374 /* HomeWatch */,
+				247FF1AC257A0FE500112374 /* HomeWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		247FF19F257A0FE300112374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247FF1A7257A0FE500112374 /* Assets.xcassets in Resources */,
+				247FF1A5257A0FE300112374 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247FF1AB257A0FE500112374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247FF1C2257A0FE600112374 /* Preview Assets.xcassets in Resources */,
+				247FF1BF257A0FE600112374 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24EF8552256EEC60005F7EEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +476,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		247FF1A9257A0FE500112374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247FF1B5257A0FE500112374 /* ContentView.swift in Sources */,
+				247FF1E1257A12F600112374 /* Item.swift in Sources */,
+				247FF1B3257A0FE500112374 /* HostingController.swift in Sources */,
+				247FF1B9257A0FE500112374 /* NotificationController.swift in Sources */,
+				247FF1DB257A12E200112374 /* RestService.swift in Sources */,
+				247FF1B7257A0FE500112374 /* ExtensionDelegate.swift in Sources */,
+				247FF1D5257A127000112374 /* ItemView.swift in Sources */,
+				247FF1BB257A0FE500112374 /* NotificationView.swift in Sources */,
+				247FF1BD257A0FE500112374 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24EF8550256EEC60005F7EEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +524,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		247FF1B0257A0FE500112374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 247FF1AC257A0FE500112374 /* HomeWatch Extension */;
+			targetProxy = 247FF1AF257A0FE500112374 /* PBXContainerItemProxy */;
+		};
+		247FF1C6257A0FE600112374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 247FF1A0257A0FE300112374 /* HomeWatch */;
+			targetProxy = 247FF1C5257A0FE600112374 /* PBXContainerItemProxy */;
+		};
 		24EF8567256EEC63005F7EEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 24EF8553256EEC60005F7EEF /* Home Automation */;
@@ -343,7 +546,106 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		247FF1A3257A0FE300112374 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				247FF1A4257A0FE300112374 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		247FF1C9257A0FE600112374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				IBSC_MODULE = HomeWatch_Extension;
+				INFOPLIST_FILE = HomeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-Automation.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		247FF1CA257A0FE600112374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				IBSC_MODULE = HomeWatch_Extension;
+				INFOPLIST_FILE = HomeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-Automation.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		247FF1CC257A0FE600112374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-Automation.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		247FF1CD257A0FE600112374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6T98LR668F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eloware.private.Home-Automation.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
 		24EF8577256EEC63005F7EEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -591,6 +893,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		247FF1CE257A0FE600112374 /* Build configuration list for PBXNativeTarget "HomeWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247FF1CC257A0FE600112374 /* Debug */,
+				247FF1CD257A0FE600112374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		247FF1CF257A0FE600112374 /* Build configuration list for PBXNativeTarget "HomeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247FF1C9257A0FE600112374 /* Debug */,
+				247FF1CA257A0FE600112374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		24EF854F256EEC60005F7EEF /* Build configuration list for PBXProject "Home Automation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
