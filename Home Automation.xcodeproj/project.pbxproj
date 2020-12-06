@@ -22,6 +22,7 @@
 		247FF1D5257A127000112374 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCC2D7257934EE001A0415 /* ItemView.swift */; };
 		247FF1DB257A12E200112374 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF8585256EEF7C005F7EEF /* RestService.swift */; };
 		247FF1E1257A12F600112374 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B47DE725782AD900F706E0 /* Item.swift */; };
+		248F9B07257CDB8C000978FD /* ChangeNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B47E062579610A00F706E0 /* ChangeNameView.swift */; };
 		24B47DE825782AD900F706E0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B47DE725782AD900F706E0 /* Item.swift */; };
 		24B47DF6257958D400F706E0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24B47DF5257958D400F706E0 /* .gitignore */; };
 		24B47DFB2579594800F706E0 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 24B47DFA2579594800F706E0 /* readme.md */; };
@@ -487,6 +488,7 @@
 				247FF1DB257A12E200112374 /* RestService.swift in Sources */,
 				247FF1B7257A0FE500112374 /* ExtensionDelegate.swift in Sources */,
 				247FF1D5257A127000112374 /* ItemView.swift in Sources */,
+				248F9B07257CDB8C000978FD /* ChangeNameView.swift in Sources */,
 				247FF1BB257A0FE500112374 /* NotificationView.swift in Sources */,
 				247FF1BD257A0FE500112374 /* ComplicationController.swift in Sources */,
 			);

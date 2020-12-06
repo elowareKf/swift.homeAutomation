@@ -75,6 +75,11 @@ class RestService: RestServiceBase {
         }).resume()
     }
 
+    func requestFactory() -> URLRequest{
+        var result = URLRequest(url: super.url)
+        result.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        return result
+    }
 
     func setItem(id: Int, value: Int, callback: @escaping (Int) -> Void) {
         // jsonEncode({"io": io, "value": value})
@@ -100,7 +105,11 @@ class RestService: RestServiceBase {
     }
 
     func nameItem(id: String, name: String) {
+        var request = requestFactory()
+        request.httpMethod = "PUT"
+        request.httpBody = Data("{\"io\": \(id), \"description\": \"\(name)\"}".utf8)
 
+        URLSession(configuration: .default).dataTask(with: request).resume()
     }
 
 

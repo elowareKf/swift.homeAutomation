@@ -13,6 +13,7 @@ struct ItemView: View {
     @State var title: String
     @State var value: Bool
     static var restService: RestService!
+    @State var isPresented:Bool = false
     
     var body: some View {
         
@@ -26,13 +27,16 @@ struct ItemView: View {
                             value = result != 0
                         }
                     }}
-                .gesture(LongPressGesture(minimumDuration: 2)
+                .gesture(LongPressGesture(minimumDuration: 1)
                             .onEnded { _ in
-                                
+                                print("Long press done")
+                                isPresented = true
                             })
             Text(title).foregroundColor(.white)
-
         }
+        .sheet(isPresented: $isPresented){return ChangeNameView(for: self.id,
+                                                                with: $title,
+                                                                isPresented: $isPresented) }
     }
     
     

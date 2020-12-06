@@ -10,13 +10,15 @@ import SwiftUI
 struct ChangeNameView: View {
     
     var restService: RestService
-    let id: Int
-    @State private var name: String = ""
+    let id: String
+    @Binding private var name: String
+    @Binding var isShown: Bool
     
-    init(for id: Int, with name: String) {
+    init(for id: String, with name: Binding<String>, isPresented: Binding<Bool>) {
         restService = RestService()
         self.id = id
-        self.name = name
+        self._isShown = isPresented
+        self._name = name
     }
     
     var body: some View {
@@ -24,14 +26,11 @@ struct ChangeNameView: View {
             Text("Name ändern")
                 .font(.title)
             Spacer().frame(height: 20)
-            Text("Aktueller Name: \(name)")
             TextField("Name", text: $name)
             HStack{
                 Button("Speichern"){
-                    
-                }
-                Button("Abbrechen"){
-                    
+                    restService.nameItem(id: self.id, name: self.name)
+                    self.isShown = false
                 }
             }
         }.padding()
@@ -39,8 +38,10 @@ struct ChangeNameView: View {
 }
 
 struct ChangeNameView_Previews: PreviewProvider {
-    
+    @State(initialValue: true) static var shown: Bool
+    @State(initialValue: "Titel") static var name: String
+
     static var previews: some View {
-        return ChangeNameView(for: 1, with: "Test")
+        return ChangeNameView(for: "1", with: $name, isPresented: $shown)
     }
 }
