@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-struct LoadingView: View{
+struct MainView: View{
     
     var restService: RestService
     @State private var items: [Item]? = nil
@@ -24,15 +24,18 @@ struct LoadingView: View{
         if (items != nil){
             ScrollView{
                 VStack{
+                    Text("Home Automation")
+                        .font(.title)
                     LazyVGrid(columns: [GridItem(.flexible()),
                                         GridItem(.flexible()),
                                         GridItem(.flexible())], content: {
                         ForEach(self.items!) { item in
-                            ItemView(title: item.name, id: String(item.id), value: item.value != 0)
+                            ItemView(id: String(item.id), title: item.name, value: item.value != 0)
                         }
                     })
                 }
             }
+            .padding(.horizontal)
         }else{
             VStack{
                 ProgressView().onAppear(perform: loadItems)
@@ -49,9 +52,9 @@ struct LoadingView: View{
 }
 
 
-struct LoadingView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        return LoadingView()
+        return MainView()
     }
 }
 

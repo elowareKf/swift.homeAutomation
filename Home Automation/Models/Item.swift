@@ -10,7 +10,7 @@ import Foundation
 struct Item: Codable, Identifiable {
     let id: Int
     let name: String
-    let value: Int
+    var value: Int
 }
 
 struct ItemResult: Codable {

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ItemView: View {
-
-    let title: String
+    
     let id: String
+    @State var title: String
     @State var value: Bool
     static var restService: RestService!
-
+    
     var body: some View {
-
+        
         ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .foregroundColor(value ? .green : .red)
@@ -26,21 +26,22 @@ struct ItemView: View {
                             value = result != 0
                         }
                     }}
-                
-                    Text(title).foregroundColor(.white)
+                .gesture(LongPressGesture(minimumDuration: 2)
+                            .onEnded { _ in
+                                
+                            })
+            Text(title).foregroundColor(.white)
 
         }
-        
-        
     }
-
-
+    
+    
 }
 
 struct ItemView_Previews: PreviewProvider {
     
     static var previews: some View {
-        return ItemView(title: "Nummer 1", id: "1", value: true)
+        return ItemView(id: "1", title: "Nummer 1", value: true)
     }
 }
 
