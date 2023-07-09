@@ -34,6 +34,7 @@ struct ItemView: View {
                             })
             Text(title).foregroundColor(.white)
         }
+        .frame(maxWidth: 200, maxHeight: 200)
         .sheet(isPresented: $isPresented){return ChangeNameView(for: self.id,
                                                                 with: $title,
                                                                 isPresented: $isPresented) }
